@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="spring-app-xml-assn"/>
+<aop-project name="MiniPrjt-Modified"/>
+<aop-project name="emp-service-new"/>
+<aop-project name="jpa-demo-assnmt4"/>
+<aop-project name="spring-app-annotations"/>
+<aop-project name="spring-app-xml2"/>
+<aop-project name="emp-rest-clients"/>
+<aop-project name="emp-service-final"/>
+<aop-project name="emp-serve"/>
+<aop-project name="Emp1"/>
+<aop-project name="bank"/>
+<aop-project name="spring-assn"/>
+<aop-project name="writer-app"/>
+<aop-project name="spring-app-xml"/>
+<aop-project name="my-project"/>
+<aop-project name="emp-service"/>
+<aop-project name="my-project-rest"/>
+</aop-reference-model>

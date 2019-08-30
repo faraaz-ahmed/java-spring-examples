@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id = "mymail" class = "com.demo.spring.Mail" scope="prototype">
+		<property name="fromAddress" value = "Trainer"></property>
+		<property name="toAddress" value="al in the classs"></property>
+		<property name="message" ref="mymsg"/>
+	</bean>
+	
+	<bean id="mymsg" class="com.demo.spring.Message" scope = "prototype">
+		<property name="header" value = "faraaz"></property>
+		<property name="body" value = "moon mission"></property>
+	</bean>
+
+</beans>

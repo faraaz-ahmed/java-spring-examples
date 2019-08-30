@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<h1>Welcome, please submit your request below:</h1><br>
+	<form action = "customercheck" method = "post" th:object = "${CustomerLogs}"><br>
+		Email : <input type = "text" th:field = "*{email}">
+		<span th:if="${#fields.hasErrors('email')}"
+					th:errors="*{email}"></span><br>
+		Software : <input type = "text" th:field = "*{software}">
+		<span th:if="${#fields.hasErrors('software')}"
+					th:errors="*{software}"></span><br>
+		Operating System : <input type = "text" th:field = "*{operatingSystem}">
+		<span th:if="${#fields.hasErrors('operatingSystem')}"
+					th:errors="*{operatingSystem}"></span><br>
+		Problem Description : <input type = "text" th:field = "*{problemDescription}">
+		<span th:if="${#fields.hasErrors('operatingSystem')}"
+					th:errors="*{operatingSystem}"></span><br>
+		<input type = "submit" value = "Submit Request"><br>
+	</form>
+	<a th:href = "@{/update}">Update name</a> <br>
+	<a th:href = "@{/delete}">Delete email</a>
+</body>
+</html>
